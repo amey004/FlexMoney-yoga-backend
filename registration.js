@@ -7,7 +7,7 @@ router.post("/register",async (req,res)=>{
     try {
         console.log(req.body);
         const {name,email,phone,age,batch,month} = req.body;
-        const query = `INSERT INTO person(phone,email,name,age,batch,month) values('${phone}','${email}','${name}',${age},'${batch}','${month}')`;
+        const query = `INSERT INTO member(phone,email,name,age,batch,month) values('${phone}','${email}','${name}',${age},'${batch}','${month}')`;
         const data = await client.query(query);
         console.log(data);
         res.status(200).json(data);
