@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const client = require("./database");
 
+/* Add data to postgres*/
 router.post("/register",async (req,res)=>{
     try {
         console.log(req.body);
