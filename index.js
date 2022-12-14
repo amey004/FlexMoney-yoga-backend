@@ -13,7 +13,7 @@ app.use(cookieParser());
 app.use(
   cors({
     origin: [
-      "https://flexmoney-yogaclass.netlify.app/",
+      "https://flexmoney-yogaclass.netlify.app",
       "http://localhost:3000",
     ],
     credentials: true,
